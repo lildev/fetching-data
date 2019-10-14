@@ -7,7 +7,7 @@ class App extends React.Component {
   state = {
     users: [],
     todos: [],
-    selectboxValue: "all",
+    selectboxValue: "0",
     isLoading: true
   }
 
@@ -59,7 +59,7 @@ class App extends React.Component {
     })
     let todoApi;
 
-    if(id === "all") {
+    if(id === "0") {
       todoApi = "https://jsonplaceholder.typicode.com/todos"
     }else {
       todoApi = "https://jsonplaceholder.typicode.com/todos?userId=" + id

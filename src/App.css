@@ -25,12 +25,12 @@ thead tr td {
 
 .box select {
   color: white;
-  padding: 12px;
+  padding: 10px 12px;
   width: 300px;
   border: none;
   border: 1px solid #007bff;
   color: #007bff;
-  font-size: 20px;
+  font-size: 18px;
   appearance: button;
   outline: none;
 }
@@ -44,8 +44,8 @@ thead tr td {
   width: 22%;
   height: auto;
   text-align: center;
-  font-size: 20px;
-  line-height: 52px;
+  font-size: 18px;
+  line-height: 50px;
   pointer-events: none;
   color: #007bff;
 }
