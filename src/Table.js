@@ -16,14 +16,15 @@ function Table(props) {
       <tbody>
         {
           todos.map(todo => {
+            const { id, userId, title, completed } = todo;
             return (
-              <tr key={todo.id}>
-                <td>{todo.id}</td>
-                <td>{todo.userId}</td>
-                <td>{todo.title}</td>
+              <tr key={id}>
+                <td>{id}</td>
+                <td>{userId}</td>
+                <td>{title}</td>
                 <td>
-                  <span className={todo.completed ? "badge badge-primary" : "badge badge-danger"}>
-                    {todo.completed ? "Completed" : "Not completed"}
+                  <span className={completed ? "badge badge-primary" : "badge badge-danger"}>
+                    {completed ? "Completed" : "Not completed"}
                   </span>
                 </td>
               </tr>

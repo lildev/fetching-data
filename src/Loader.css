@@ -87,12 +87,8 @@
     margin-left: -1px;
   }
 }
-body {
-  background: #000;
-  overflow: hidden;
-  margin: 0;
-}
-body .pacman:before, body .pacman:after {
+
+.pacman:before, .pacman:after {
   content: '';
   position: absolute;
   background: #FFC107;
@@ -108,7 +104,7 @@ body .pacman:before, body .pacman:after {
   -o-animation: up 0.4s infinite;
   animation: up 0.4s infinite;
 }
-body .pacman:after {
+.pacman:after {
   margin-top: -1px;
   border-radius: 0 0 50px 50px;
   -webkit-animation: down 0.4s infinite;
@@ -116,7 +112,7 @@ body .pacman:after {
   -o-animation: down 0.4s infinite;
   animation: down 0.4s infinite;
 }
-body .dot {
+.dot {
   position: absolute;
   left: 50%;
   top: 50%;
